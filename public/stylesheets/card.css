@@ -26,6 +26,7 @@
     -webkit-transition: all 0.5s ease-out;
     -webkit-transform-origin: 0 0;
     border: 1px solid black;
+    background-color: #FE6165;
 }
 .front {
     -webkit-transform: rotateY(-20deg);
@@ -65,4 +66,7 @@
 }
 .card-toggle:checked + .card .inner-right {
     -webkit-transform: rotateY(-15deg);
+}
+.cardPage {
+  background-color: #69CEF6;
 }

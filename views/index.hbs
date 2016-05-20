@@ -1,9 +1,39 @@
 <div class="header">
   <h1>{{title}}</h1>
 </div>
+<div class="one">
+  <h2>DO YOU LOVE YOUR MOM?</h2>
+  <button type="button" id="mom">YES</button>
+  <button type="button" id="no">NO</button>
+</div>
+<div class="outside">
+  <div id="main">
+    <form class="" action="/yomommajoke" method="get">
+      <label for="">Your Mother's Name</label>
+      <input type="text">
+      <button type="button" name="button"><a href="/card">Generate a Mother's Day Card</a></button>
+    </form>
+  </div>
+</div>
 
-<form class="" action="index.html" method="post">
-  <label for="">Your Mother's Name</label>
-  <input type="text" name="name" value="">
-  <input type="submit"value="Generate a Mother's Day Card">
-</form>
+<div class="modal">
+  <div class="white">
+    <img id='close' src="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-22-128.png" alt="" />
+    <img src="https://media.giphy.com/media/k1WIimK32xBOo/giphy.gif" alt="" />
+  </div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+  $("#mom").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#main").offset().top
+    }, 2000);
+  });
+
+  $('#no').click(function(){
+    $('.modal').css({"opacity":"1"});
+  });
+
+})
+</script>
