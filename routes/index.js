@@ -30,11 +30,6 @@ httpResponse.on('end', () => {
   console.log('No more data in response.')
 })
 });
-
-httpRequest.on('error', (e) => {
-console.log(`problem with request: ${e.message}`);
-});
-
 // write data to request body
 httpRequest.end();
 
