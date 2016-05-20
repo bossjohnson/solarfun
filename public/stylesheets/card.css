@@ -1,0 +1,68 @@
+.card-toggle {
+    display: none;
+}
+.card {
+    display: block;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    -webkit-perspective: 700;
+    margin: 30px auto;
+    cursor: pointer;
+    position: relative;
+    /*left: 10vw;*/
+}
+.card:hover .face {
+    -webkit-transition: all 0.3s ease-out;
+}
+.face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 400px;
+    font-size: 2em;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: all 0.5s ease-out;
+    -webkit-transform-origin: 0 0;
+    border: 1px solid black;
+}
+.front {
+    -webkit-transform: rotateY(-20deg);
+    z-index: 3;
+    -webkit-backface-visibility: hidden;
+}
+.front img {
+    height: 100%;
+    width: 100%;
+}
+.inner-left {
+
+    -webkit-transform: rotateY(-20deg);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-left > img {
+    -webkit-transform: rotateY(180deg);
+}
+.inner-right {
+    text-align: center;
+    color: black;
+    background-repeat: no-repeat;
+    -webkit-transform: rotateY(0deg);
+    z-index: 1;
+    /*font-size: 2em;*/
+    font-family: 'Lato', sans-serif;
+    padding: 0 1%;
+}
+.card:hover .front, .card:hover .inner-left {
+    -webkit-transform: rotateY(-35deg);
+}
+.card-toggle:checked + .card .front, .card-toggle:checked + .card .inner-left {
+    -webkit-transform: rotateY(-165deg);
+}
+.card-toggle:checked + .card .inner-right {
+    -webkit-transform: rotateY(-15deg);
+}

@@ -1,7 +1,15 @@
 body {
   padding: 0px;
   margin: 0px;
+  height: 100vh;
+  width: 100vw;
   font-family: "Lato", sans-serif;
+}
+.cardPage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -18,6 +26,7 @@ h1{
   background-color:  #FE6165;
   height: 100px;
 }
+<<<<<<< HEAD
 #main {
   width: 50%;
   margin-left: 25%;
@@ -114,3 +123,6 @@ h2 {
    z-index: 9999;
    float: right;
  }
+.jokeButton, .jokeButtonOriginal {
+  display: none;
+}
