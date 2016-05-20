@@ -9,6 +9,8 @@
     -webkit-perspective: 700;
     margin: 30px auto;
     cursor: pointer;
+    position: relative;
+    /*left: 10vw;*/
 }
 .card:hover .face {
     -webkit-transition: all 0.3s ease-out;

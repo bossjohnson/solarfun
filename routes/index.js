@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 var http = require('http');
+var $ = require('jQuery');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -23,8 +24,8 @@ router.get('/card', function(req, res, next) {
             // console.log(joke.joke); // This is a string
             res.render('joke', {
                 joke: joke
-            })
-        })
+            });
+        });
     });
     // write data to request body
     httpRequest.end();
