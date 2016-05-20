@@ -45,10 +45,9 @@
 }
 
 .inner-right {
-  /*background-image: url(https://placeimg.com/400/400/animals);*/
+  background-image: url(https://placeimg.com/400/400/);
   text-align: center;
   color: black;
-  border: 1px solid black;
   -webkit-transform: rotateY(0deg);
   z-index: 1;
 }
