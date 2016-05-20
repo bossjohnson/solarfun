@@ -1,5 +1,3 @@
-.cards {}
-
 .card-toggle {
   display: none;
 }
@@ -35,6 +33,11 @@
   -webkit-backface-visibility: hidden;
 }
 
+.front img {
+  height: 100%;
+  width: 100%;
+}
+
 .inner-left {
   -webkit-transform: rotateY(-20deg);
   z-index: 2;
@@ -45,19 +48,13 @@
 }
 
 .inner-right {
-<<<<<<< HEAD
   height: 400px;
   width: 400px;
   text-align: center;
   color: white;
-  background-image: url(https://placeimg.com/180/180/nature);
-  background-size: contain;
-=======
-  /*background-image: url(https://placeimg.com/400/400/animals);*/
+  background-image: url(https://placeimg.com/400/400/animals);
+  background-repeat: no-repeat;
   text-align: center;
-  color: black;
-  border: 1px solid black;
->>>>>>> 1e04965281e9d168bbf285bf8123349d383c4417
   -webkit-transform: rotateY(0deg);
   z-index: 1;
 }
