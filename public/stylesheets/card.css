@@ -6,8 +6,8 @@
 
 .card {
   display: block;
-  width: 180px;
-  height: 180px;
+  width: 400px;
+  height: 400px;
   position: relative;
   -webkit-perspective: 700;
   margin: 30px auto;
@@ -45,12 +45,19 @@
 }
 
 .inner-right {
+<<<<<<< HEAD
   height: 400px;
   width: 400px;
   text-align: center;
   color: white;
   background-image: url(https://placeimg.com/180/180/nature);
   background-size: contain;
+=======
+  /*background-image: url(https://placeimg.com/400/400/animals);*/
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+>>>>>>> 1e04965281e9d168bbf285bf8123349d383c4417
   -webkit-transform: rotateY(0deg);
   z-index: 1;
 }

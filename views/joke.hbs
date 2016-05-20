@@ -1,16 +1,15 @@
-<p> {{joke.joke}} </p>
-
 <div class='cards'>
     <input type="checkbox" id="card-toggle-1" class="card-toggle" value="selected">
     <label class='card' for="card-toggle-1">
         <div class='front face'>
-            <img src='http://placehold.it/400x400/animals'>
+            <img src='http://placeimg.com/400/400/animals'>
         </div>
         <div class="inner-left face">
             <img src='https://placeimg.com/400/400/animals'>
         </div>
         <div class="inner-right face">
-            Your mama joke!
+            <p> {{joke.joke}} </p>
+
         </div>
     </label>
 </div>
@@ -23,8 +22,8 @@
 
 <script type="text/javascript">
     $(function() {
-        setTimeout(function() {
+        $('.front').click(function() {
             $(".jokeButtonOriginal").click()
-        }, 500)
-    })
+        });
+    });
 </script>
