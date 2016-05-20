@@ -11,21 +11,23 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/yomamajoke', function(req, res, next) {
-var urlApi = 'http://api.yomomma.info/';
-var httpRequest = http.request(urlApi, (httpResponse) => {
-httpResponse.setEncoding('utf8');
-var text = '';
-httpResponse.on('data', (chunk) => {
-  text += chunk
-});
-httpResponse.on('end', () => {
-  var joke = JSON.parse(text);
-  // console.log(joke.joke); // This is a string
-  res.render('joke', {joke: joke})
-})
-});
-// write data to request body
-httpRequest.end();
+    var urlApi = 'http://api.yomomma.info/';
+    var httpRequest = http.request(urlApi, (httpResponse) => {
+        httpResponse.setEncoding('utf8');
+        var text = '';
+        httpResponse.on('data', (chunk) => {
+            text += chunk
+        });
+        httpResponse.on('end', () => {
+            var joke = JSON.parse(text);
+            // console.log(joke.joke); // This is a string
+            res.render('joke', {
+                joke: joke
+            })
+        })
+    });
+    // write data to request body
+    httpRequest.end();
 });
 
 router.post('/', function(req, res, next) {
