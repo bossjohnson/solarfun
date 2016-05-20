@@ -1,24 +1,25 @@
-<div class='cards'>
-    <input type="checkbox" id="card-toggle-1" class="card-toggle" value="selected">
-    <label class='card' for="card-toggle-1">
-        <div class='front face'>
-            <img src='http://placeimg.com/400/400/animals'>
-        </div>
-        <div class="inner-left face">
-            <img src='https://placeimg.com/400/400/animals'>
-        </div>
-        <div class="inner-right face">
-            <p> {{joke.joke}} </p>
+<div class="cardPage">
+  <div class='cards'>
+      <input type="checkbox" id="card-toggle-1" class="card-toggle" value="selected">
+      <label class='card' for="card-toggle-1">
+          <div class='front face'>
+              <img src='http://www.designbolts.com/wp-content/uploads/2014/04/Free-Happy-mothers-Day-Card-2.png'>
+          </div>
+          <div class="inner-left face">
+              <img src='https://placeimg.com/400/400/animals'>
+          </div>
+          <div class="inner-right face">
+              <p> {{joke.joke}} </p>
 
-        </div>
-    </label>
+          </div>
+      </label>
+  </div>
+
+  <input class="jokeButtonOriginal" onclick='responsiveVoice.speak("{{joke.joke}}");' type='button' value='🔊 Original' />
+  <input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}", "UK English Male");' type='button' value='🔊 UK British Male' />
+  <input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}", "French Female");' type='button' value='🔊 French Female' />
+  <input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}", "Spanish Female");' type='button' value='🔊 Spanish Female' />
 </div>
-
-<input class="jokeButtonOriginal" onclick='responsiveVoice.speak("{{joke.joke}}");' type='button' value='🔊 Original' />
-<input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}", "UK English Male");' type='button' value='🔊 UK British Male' />
-<input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}", "French Female");' type='button' value='🔊 French Female' />
-<input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}", "Spanish Female");' type='button' value='🔊 Spanish Female' />
-<!-- <input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}");' type='button' value='🔊 Play' /> -->
 
 <script type="text/javascript">
     $(function() {
