@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
     });
 });
 
-router.get('/yomamajoke', function(req, res, next) {
+router.get('/card', function(req, res, next) {
     var urlApi = 'http://api.yomomma.info/';
     var httpRequest = http.request(urlApi, (httpResponse) => {
         httpResponse.setEncoding('utf8');
