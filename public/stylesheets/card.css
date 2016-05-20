@@ -45,9 +45,12 @@
 }
 
 .inner-right {
+  height: 400px;
+  width: 400px;
   text-align: center;
   color: white;
   background-image: url(https://placeimg.com/180/180/nature);
+  background-size: contain;
   -webkit-transform: rotateY(0deg);
   z-index: 1;
 }
