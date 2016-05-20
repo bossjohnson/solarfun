@@ -6,7 +6,7 @@ var http = require('http');
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('index', {
-        title: 'YoMama'
+        title: 'MOM APPRECIATION'
     });
 });
 
