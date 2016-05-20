@@ -1,1 +1,16 @@
 <p> {{joke.joke}} </p>
+
+<input class="jokeButtonOriginal" onclick='responsiveVoice.speak("{{joke.joke}}");' type='button' value='🔊 Original' />
+<input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}", "UK English Male");' type='button' value='🔊 UK British Male' />
+<input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}", "French Female");' type='button' value='🔊 French Female' />
+<input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}", "Spanish Female");' type='button' value='🔊 Spanish Female' />
+<!-- <input class="jokeButton" onclick='responsiveVoice.speak("{{joke.joke}}");' type='button' value='🔊 Play' /> -->
+
+<script type="text/javascript">
+  $(function() {
+    setTimeout(function() {
+      $(".jokeButtonOriginal").click()
+    }, 500)
+})
+
+</script>
